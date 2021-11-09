@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout.css">
+    <title>Checkout My Boutique !</title>
+</head>
+<body background="boutique.jpg">
+    <h1 align="center">MY BOUTIQUE</h1>
+<h2> Order Produk</h2>
+<table>
+
+<tr><td>Nama </td><td><input type="text" name="nama pemesan"
+placeholder="Nama Lengkap Pemesan"></td></tr>
+<tr>
+    <td>Nama Barang</td>
+    <td>
+        <input type="radio" name="baju" value="bajubrukat"/>Baju Brukat<br/>
+        <input type="radio" name="baju" value="dressdrapery"/>Dress Drapery<br/>
+        <input type="radio" name="baju" value="empired line"/>Empired Line<br/>
+    <td>Ukuran Barang</td>
+    <td>
+        <input type="checkbox"/>m
+        <input type="checkbox"/>l
+        <input type="checkbox"/>xl
+    </tr>
+    <tr>
+        <td>Jumlah Barang</td>
+        <td>
+        <input type="number" value="Order Lebih">
+        </td>
+    </tr>
+    <tr>
+    <td>Alamat Penerima</td><td><textarea></textarea></td>
+    <td><input type="text" placeholder="Nama Jalan, Nomor, Kota" colspan="3" name="address" required/></td>
+    </tr>
+    <tr>
+        <td class="ket">ID Pelanggan</td>
+        <td><input type="text" placeholder="Masukkan ID Anda" colspan"3" name="nomor" required/></td>
+        </tr>
+        <tr>
+            <td class="ket">Daerah</td>
+            <td>
+            <input type="text" name="daerah" placeholder="Pilih Salah Satu" collspan"3" list="daerah" required/>
+            <datalist id="daerah">
+                <option value="Jakarta">Jakarta</option>
+                <option value="Bandung">Bandung</option>
+                <option value="Yogyakarta">Yogyakarta</option>
+                <option value="Bali">Bali</option>
+                <option value="Semarang">Semarang</option>
+                <option value="Bogor">Bogor</option>
+                <option value="Malang">Malang</option>
+                <option value="Sukabumi">Sukabumi</option>
+                <option value="Medan">Medan</option>
+                <option value="Makassar">Makassar</option>
+            </datalist>
+            <tr>
+            </td>
+              <br>
+                <li>
+                <label for="nomorhp">Nomor Handphone :</label>
+                <input id="nomorhp"name="nomorhp"/>
+                </li><br>
+
+                <li>
+                <label for="email">Alamat Email</label>
+                <input id="email"name="e-mail"/>
+                </li><br>
+                
+    <tr><td></td><td><input type="submit" value="checkout" onclick="alert(Terimakasih Sudah Berbelanja);"></td></tr>
+    </table>
+
+    
+</body>
+</html>
